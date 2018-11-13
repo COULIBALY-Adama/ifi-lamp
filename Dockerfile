@@ -68,7 +68,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
     php -r "unlink('composer-setup.php');" && \
     mv composer.phar /usr/local/bin/composer
 
-ENV MYSQL_PASS:-$(pwgen -s 12 1)
+ENV MYSQL_PASS:-ifipassword
 # ENV ALLOW_EMPTY_PASSWORD="no" \
 #    MYSQL_ROOT_PASSWORD="root" \ 
 #    MYSQL_ROOT_USER="root"
